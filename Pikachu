@@ -1,0 +1,31 @@
+package monsters;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Monster aMonster = new Monster[];
+		createMonster();
+		String name = aMonster.name;
+		displayMonster(name);
+		
+	}
+	
+	static Monster[] createMonster() {
+	for(int i = 0; i<8; i++) {
+		Monster n = new Monster();
+		n.name = "Pikachu";
+		n.health = 100;
+		return n[i];
+	}
+	}
+	
+	static void displayMonster(String name) {
+		
+		
+		System.out.println("Monster<" + name + ">");
+		
+	}
+
+}
